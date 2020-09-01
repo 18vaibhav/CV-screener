@@ -1,5 +1,4 @@
 console.log("This is my index.js");
-// Data is an array of objects which contains information about the candidates
 const data = [
     {
         name: 'Rohan Das',
@@ -48,7 +47,6 @@ const data = [
 ]
 
 
-// CV Iterator
 function cvIterator(profiles){
     let nextIndex=0;
     return {
@@ -62,7 +60,6 @@ function cvIterator(profiles){
 const candidates = cvIterator(data);
 
 nextCV();
-// Button listener for next button
 const next = document.getElementById('next');
 next.addEventListener('click', nextCV);
 
